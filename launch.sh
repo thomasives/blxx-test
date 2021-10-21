@@ -19,7 +19,7 @@ then
     exit 1
 fi
 
-ioc=$(realpath ${1})
+ioc=$(realpath iocs/${1})
 shift
 command=${1:-"bash /epics/ioc/config/start.sh"}
 shift
