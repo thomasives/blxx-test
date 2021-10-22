@@ -1,6 +1,6 @@
 beamline: blxxi
 namespace: epics-iocs
-base_image: ioc-automation1:0.2
+base_image: ioc-automation1:test.run
 
 # root folder of generic ioc source - not expected to change
 iocFolder: /epics/ioc
