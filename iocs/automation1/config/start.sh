@@ -29,4 +29,6 @@ boot=${config_dir}/ioc.boot
 # Output to /tmp for guarenteed writability
 msi -MTOP=${TOP},THIS_DIR=${config_dir} ${boot} > /tmp/ioc.boot
 
+export EPICS_CA_MAX_ARRAY_BYTES=6000000
+
 exec ${IOC}/bin/linux-x86_64/ioc /tmp/ioc.boot
